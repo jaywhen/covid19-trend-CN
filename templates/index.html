@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>国内疫情趋势</title>
+        <script src="../static/js/jquery-1.11.1.min.js"></script>
+        <script src="../static/js/echarts.min.js"></script>
+        <script src="../static/js/china.js"></script>
+        <link href="../static/css/index.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="../static/img/covid19.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div id="title">国内新冠疫情趋势</div>
+        </header>
+
+        <div id="time"></div>
+
+        <div class="box">
+            <div id="summary">
+                <div class="num"><h1></h1></div>
+                <div class="num"><h1></h1></div>
+                <div class="num"><h1></h1></div>
+                <div class="num"><h1></h1></div>
+                <div class="txt"><h2>累计确诊</h2></div>
+                <div class="txt"><h2>剩余疑似</h2></div>
+                <div class="txt"><h2>累计治愈</h2></div>
+                <div class="txt"><h2>累计死亡</h2></div>
+            </div>
+
+            <div id="china-map">地图</div>
+            <div id="total">累计</div>
+            <div id="newly">新增</div> 
+            <div id="top5-non-hubei">TOP5</div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-cont" style="max-width:935px;">
+                <nav>
+                    <ul class="footer-items">
+                        <li>
+                            <a href="https://www.cnblogs.com/Jaywhen-xiang/">技术博客</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jaywhen.com">个人博客</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jaywhen">Github</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="copy-right">&copy;2020 jaywhen</span>
+            </div>
+        </footer>
+
+        <script src="../static/js/ec_chinaMap.js"></script>
+        <script src="../static/js/ec_total.js"></script>
+        <script src="../static/js/ec_newly.js"></script>
+        <script src="../static/js/ec_top5_non_hubei.js"></script>
+        <script src="../static/js/controller.js"></script>
+    </body>
+</html>
