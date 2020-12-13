@@ -11,7 +11,7 @@ def get_tencent_data():
     url1 = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5"
     url2 = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_other"
     headers = {
-        'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'
+        'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
     }
     r1 = requests.get(url1, headers)
     r2 = requests.get(url2, headers)
@@ -36,8 +36,8 @@ def get_tencent_data():
         history[ds] = {"confirm": confirm, "suspect": suspect, "heal": heal, "dead": dead}
     for i in data_all2["chinaDayAddList"]:
         ds = "2020." + i["date"]
-        tup = time.strptime(ds, "%Y.%m.%d")  # 匹配时间
-        ds = time.strftime("%Y-%m-%d", tup)  #改变时间输入格式，不然插入数据库会报错，数据库是datatime格式
+        tup = time.strptime(ds, "%Y.%m.%d")
+        ds = time.strftime("%Y-%m-%d", tup)
         confirm = i["confirm"]
         suspect = i["suspect"]
         heal = i["heal"]

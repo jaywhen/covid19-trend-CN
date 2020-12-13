@@ -39,9 +39,6 @@ def query(sql,*args):
 
 
 def get_summary_data():
-    """
-    :return: 返回大屏div id=c1 的数据
-    """
     # 因为会更新多次数据，取时间戳最新的那组数据
     sql = "select sum(confirm)," \
           "(select suspect from history order by ds desc limit 1)," \
