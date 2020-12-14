@@ -82,7 +82,7 @@ def update_details():
 		conn,cursor = get_conn()
 		sql = "insert into details(update_time,province,city,confirm,confirm_add,heal,dead) values(%s,%s,%s,%s,%s,%s,%s)"
 		sql_query = "select %s=(select update_time from details order by id desc limit 1)"  #对比当前最大时间戳
-		#对比当前最大时间戳
+
 		cursor.execute(sql_query,li[0][0])
 		if not cursor.fetchone()[0]:
 			print(f"{time.asctime()}开始更新数据")
