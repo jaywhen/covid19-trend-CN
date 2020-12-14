@@ -97,28 +97,6 @@ def update_details():
 	finally:
 		close_conn(conn,cursor)
 
-
-#插入history数据
-def insert_history():
-    cursor = None
-    conn = None
-    try:
-        dic = get_tencent_data()[0]#0代表历史数据字典
-        print(f"{time.asctime()}开始插入历史数据")
-        conn,cursor = get_conn()
-        sql = "insert into history values (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-        for k,v in dic.items():
-            cursor.execute(sql,[k, v.get("confirm"),v.get("confirm_add"),v.get("suspect"),
-                           v.get("suspect_add"),v.get("heal"),v.get("heal_add"),
-                           v.get("dead"),v.get("dead_add")])
-        conn.commit()
-        print(f"{time.asctime()}插入历史数据完毕")
-    except:
-        traceback.print_exc()
-    finally:
-        close_conn(conn,cursor)
-
-
 #更新历史数据
 def update_history():
     cursor = None
