@@ -149,6 +149,7 @@ if __name__ == "__main__":
         参数说明:
         up_his 更新历史记录表
         up_det 更新详细表
+        up_all 更新所有表
         """
         print(s)
     else:
@@ -157,3 +158,6 @@ if __name__ == "__main__":
             update_history()
         elif order == "up_det":
             update_details()
+        elif order == "up_all":
+            update_details()
+            update_history()
