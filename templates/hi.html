@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .a {
+      border: 1px solid #000000;
+      width: 100px;
+      height: 100px;
+      background-color: #000000;
+    }
+    @media only screen and (min-width: 300px) and (max-width: 640px) {
+      .a {
+        background-color: red;
+      }
+    }
+    @media only screen and (min-width: 700px) {
+      .a {
+        background-color: green;
+      }
+    }
+    @media only screen and (max-width:200px) {
+      .a {
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="a"></div>
+</body>
+</html>

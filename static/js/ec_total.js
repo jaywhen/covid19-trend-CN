@@ -1,11 +1,11 @@
-var ec_total = echarts.init(document.getElementById('total'), "dark");
+var ec_total = echarts.init(document.getElementById('total'), "walden");
 
 var ec_total_Option = {
 	//标题样式
 	title: {
 		text: "全国累计趋势",
 		textStyle: {
-			// color: 'white',
+			color: '#333333',
 		},
 		left: 'left',
 	},

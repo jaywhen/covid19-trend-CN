@@ -1,4 +1,4 @@
-var ec_newly = echarts.init(document.getElementById('newly'), "dark");
+var ec_newly = echarts.init(document.getElementById('newly'), "walden");
 var ec_newly_Option = {
 	tooltip: {
 		trigger: 'axis',
@@ -18,7 +18,7 @@ var ec_newly_Option = {
 	title: {
 		text: "全国新增趋势",
 		textStyle: {
-			color: 'white',
+			color: '#333333',
 		},
 		left: 'left'
 	},

@@ -1,9 +1,9 @@
-var ec_top5_non_hubei = echarts.init(document.getElementById('top5-non-hubei'),"dark");
+var ec_top5_non_hubei = echarts.init(document.getElementById('top5-non-hubei'),"walden");
 var ec_top5_non_hubei_option = {
 	title : {
 	    text : "非湖北地区城市确诊TOP5",
 	    textStyle : {
-	        color : 'white',
+	        color : '#333333',
 	    },
 	    left : 'left'
 	},

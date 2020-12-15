@@ -1,4 +1,4 @@
-var ec_chinaMap = echarts.init(document.getElementById('china-map'), "dark");
+var ec_chinaMap = echarts.init(document.getElementById('china-map'), "walden");
 
 var ec_chinaMap_option = {
     title: {

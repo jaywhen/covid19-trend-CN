@@ -7,4 +7,3 @@ USER = os.getenv('PRO_USER')
 PASSWORD = os.getenv('PASSWORD')
 DB = os.getenv('DB')
 
-
