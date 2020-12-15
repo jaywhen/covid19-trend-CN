@@ -1,7 +1,7 @@
 function gettime() {
     $.ajax({
         url: "/time",
-                    timeout: 10000, //超时时间设置为10秒；
+                    timeout: 10000, //超时时间为10秒；
                     success: function(data) {
                         $("#time").html(data)
                     },
