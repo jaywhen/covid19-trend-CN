@@ -73,7 +73,7 @@ def close_conn(conn,cursor):
 	if conn:
 		conn.close()
 
-#插入details数据
+#更新details数据
 def update_details():
 	cursor = None
 	conn = None
