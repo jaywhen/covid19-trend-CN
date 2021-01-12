@@ -15,6 +15,3 @@
   ```
 
 
-
-体验地址: http://covid19.hellocode.run/
-
